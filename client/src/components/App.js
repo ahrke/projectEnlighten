@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import { Route, BrowserRouter, Link } from 'react-router-dom';
 
+import '../stylesheet/style.css';
 
-import Dashboard from './Dashboard';
-import Navbar from './Navbar';
+
+import Portal from './portal/Portal';
 import Landing from './Landing';
 
 class App extends Component {
@@ -12,14 +13,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Navbar />
           <Route exact path="/" component={Landing}/>
-          <Route exact path="/Dashboard" component={Dashboard} />
-
-          <div className="container">
-            <Link to="./">L</Link>
-            <Link to="./Dashboard">D</Link>
-          </div>
+          <Route exact path="/Portal" component={Portal} />
 
         </div>
       </BrowserRouter>

@@ -1,0 +1,17 @@
+.no-margins {
+  margin: 0;
+}
+
+.maxWidth {
+  width: 100%;
+}
+
+.main-portal {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-portal {
+    padding-left: 0px;
+  }
+}

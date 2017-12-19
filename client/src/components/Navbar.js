@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-      <nav className="blue lighten-1">
+      <nav className="top-nav blue lighten-1 no-margins background-for-test">
         <div className="nav-wrapper container">
           <a className="left brand-logo">
             HH Portal
